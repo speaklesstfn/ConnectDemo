@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_native"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.connectdemo.NativeActivity">
+
+    <TextView
+        android:id="@+id/native_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="原生Android界面"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/native_from_rn_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/native_title"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/native_to_rn_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/native_from_rn_value"
+        android:layout_marginTop="10dp"
+        android:text="点击跳转至RN界面，不携带数据" />
+
+    <Button
+        android:id="@+id/native_to_rn_with_value_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/native_to_rn_btn"
+        android:layout_marginTop="10dp"
+        android:text="点击跳转至RN界面，携带数据" />
+
+    <Button
+        android:id="@+id/native_to_rn_with_result_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/native_to_rn_with_value_btn"
+        android:layout_marginTop="10dp"
+        android:text="点击跳转至RN界面，返回RN界面数据" />
+
+    <TextView
+        android:id="@+id/native_from_rn_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/native_to_rn_with_result_btn"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+</RelativeLayout>
